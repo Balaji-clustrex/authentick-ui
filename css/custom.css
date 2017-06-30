@@ -1,0 +1,104 @@
+body {
+  font-family: "Lato";
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.nav-tabs { border-bottom: none; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { 
+  border-width: 0; 
+}
+.nav-tabs > li > a { 
+  border: none; 
+  color: #ccc;
+  font-size: 16px; 
+}
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover { 
+  border: none; 
+  color: #000 !important; 
+  background: transparent; 
+}
+.nav-tabs > li > a::after { 
+  content: ""; 
+  background: #000; 
+  height: 2px; 
+  position: absolute; 
+  width: 100%; 
+  left: 0px; 
+  bottom: -1px; 
+  transition: all 250ms ease 0s; 
+  transform: scale(0); 
+}
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { 
+  transform: scale(1); 
+}
+.tab-nav > li > a::after { 
+  background: #21527d none repeat scroll 0% 0%; 
+  color: #fff; 
+}
+.tab-pane { padding: 15px 0; }
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-bottom: 20px;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+}
+
+.card-text {
+    clear: both;
+    margin-top: .5em;
+    color: rgba(0, 0, 0, .68);
+}
+
+.card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+}
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+.bordered-div:after{
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ccc;
+  margin: 0 15px;
+  padding-top: 15px;
+}
