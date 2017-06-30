@@ -1,225 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>G-Dore</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/custom.css">
-    </head>
-    <body>
-        <div class="container-fluid">
-            <section class="row">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+
+<head>
+    <title>G-Dore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <section class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1476/1600/t/1/assets/logo.png?4079654091067866978" alt="Dispute Bills">
+                        <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1476/1600/t/1/assets/logo.png?4079654091067866978" alt="Dispute Bills">
                             </a>
-                        </div>
-                        <div id="navbar1" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
-                                </li>
-                                <li>
-                                    <a href="#"> Sign Out</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                </nav>
-            </section>
-            <section class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Lots</a></li>
-                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Batches</a></li>
-                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Bullion</a></li>
+                    <div id="navbar1" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"> Sign Out</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="input-group">              
-                            <input type="text" class="form-control " placeholder="Search">
-                            <span class="input-group-addon">
+                </div>
+            </nav>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Lots</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Batches</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Bullion</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search">
+                        <span class="input-group-addon">
                             <span class="glyphicon glyphicon-search"></span>
-                            </span>
-                        </div>
+                        </span>
                     </div>
                 </div>
-                <div class="row bordered-div" style="margin-top: 15px; padding-bottom: 10px;">
-                    <div class="col-lg-6 col-xs-6">
-                        <div class="dropdown">
-                            <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            </div>
+            <div class="row bordered-div" style="margin-top: 15px; padding-bottom: 10px;">
+                <div class="col-lg-6 col-xs-6">
+                    <div class="dropdown">
+                        <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
                             Sort
                             <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Sort By Name</a></li>
-                                <li><a href="#">Sort By Date</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xs-6">
-                        <div class="btn-group pull-right" role="group" aria-label="...">
-                            <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
-                            </button>
-                            <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-                            </button>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Sort By Name</a></li>
+                            <li><a href="#">Sort By Date</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 15px;">
-                    <div class="col-lg-6 col-xs-8">
-                        <p>2 Lots(14 Dore) Selected</p>
+                <div class="col-lg-6 col-xs-6">
+                    <div class="btn-group pull-right" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                            </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            </button>
                     </div>
-                    <div class="col-lg-6 col-xs-4">
-                        <div class="dropdown pull-right">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-lg-6 col-xs-8">
+                    <p>2 Lots(14 Dore) Selected</p>
+                </div>
+                <div class="col-lg-6 col-xs-4">
+                    <div class="dropdown pull-right">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
                             Actions
                             <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                            </ul>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">
-                        <div class="row" style="margin-top: 15px;">
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-block" style="text-align: center;">
-                                        <button class="btn btn-inverse" type="button">
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button" data-toggle="modal" data-target="#createLotModal">
                                         <span class="badge">
                                         <span class="glyphicon glyphicon-plus"></span>
                                         </span>
-                                        </button>
-                                        <p>Add Lot</p>
-                                    </div>
+                                    </button>
+                                    <p>Add Lot</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-block" style="text-align: center;">
-                                        <button class="btn btn-inverse" type="button">
-                                        <span class="badge">4</span>
-                                        </button>
-                                        <p>Dore</p>
+                        </div>
+                        <div class="modal fade" id="createLotModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Create Lot</h4>
                                     </div>
-                                    <div class="card-footer">
-                                        <span class="pull-right">MM/DD/YY</span>
-                                        <span style="font-weight: bold;">Lot #1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-block" style="text-align: center;">
-                                        <button class="btn btn-inverse" type="button">
-                                        <span class="badge">4</span>
-                                        </button>
-                                        <p>Dore</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <span class="pull-right">MM/DD/YY</span>
-                                        <span style="font-weight: bold;">Lot #1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-block" style="text-align: center;">
-                                        <button class="btn btn-inverse" type="button">
-                                        <span class="badge">4</span>
-                                        </button>
-                                        <p>Dore</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <span class="pull-right">MM/DD/YY</span>
-                                        <span style="font-weight: bold;">Lot #1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-block" style="text-align: center;">
-                                        <button class="btn btn-inverse" type="button">
-                                        <span class="badge">4</span>
-                                        </button>
-                                        <p>Dore</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <span class="pull-right">MM/DD/YY</span>
-                                        <span style="font-weight: bold;">Lot #1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-block" style="text-align: center;">
-                                        <button class="btn btn-inverse" type="button">
-                                        <span class="badge">4</span>
-                                        </button>
-                                        <p>Dore</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <span class="pull-right">MM/DD/YY</span>
-                                        <span style="font-weight: bold;">Lot #1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-block" style="text-align: center;">
-                                        <button class="btn btn-inverse" type="button">
-                                        <span class="badge">4</span>
-                                        </button>
-                                        <p>Dore</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <span class="pull-right">MM/DD/YY</span>
-                                        <span style="font-weight: bold;">Lot #1</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-block" style="text-align: center;">
-                                        <button class="btn btn-inverse" type="button">
-                                        <span class="badge">4</span>
-                                        </button>
-                                        <p>Dore</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <span class="pull-right">MM/DD/YY</span>
-                                        <span style="font-weight: bold;">Lot #1</span>
+                                    <div class="modal-body">
+                                        <p>
+                                            The Title Holder for this lot is a 
+                                            <select>
+                                                <option>Refinary</option>
+                                                <option>Bank</option>
+                                            </select>
+                                            and the name
+                                            of the Title Holder is <input type="text" />. I have 
+                                            <input type="text" /> Dore in the lot
+                                            origin for this Lot is <input type="text" />. The Lot number will be 
+                                            <input type="text" />
+                                            and the certificate of conformity for this Lot is <input type="file" title="" name="pic" accept="image/*">
+                                        </p>
+                                        <div style="text-align:center;">
+                                            <button type="button" class="btn btn-lg">
+                                                Submit
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="profile">
-                        Batches content
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="messages">
-                        Bullion content
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button">
+                                        <span class="badge">4</span>
+                                        </button>
+                                    <p>Dore</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-right">MM/DD/YY</span>
+                                    <span style="font-weight: bold;">Lot #1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button">
+                                        <span class="badge">4</span>
+                                        </button>
+                                    <p>Dore</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-right">MM/DD/YY</span>
+                                    <span style="font-weight: bold;">Lot #2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button">
+                                        <span class="badge">4</span>
+                                        </button>
+                                    <p>Dore</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-right">MM/DD/YY</span>
+                                    <span style="font-weight: bold;">Lot #3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button">
+                                        <span class="badge">4</span>
+                                        </button>
+                                    <p>Dore</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-right">MM/DD/YY</span>
+                                    <span style="font-weight: bold;">Lot #4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button">
+                                        <span class="badge">4</span>
+                                        </button>
+                                    <p>Dore</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-right">MM/DD/YY</span>
+                                    <span style="font-weight: bold;">Lot #5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button">
+                                        <span class="badge">4</span>
+                                        </button>
+                                    <p>Dore</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-right">MM/DD/YY</span>
+                                    <span style="font-weight: bold;">Lot #6</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button">
+                                        <span class="badge">4</span>
+                                        </button>
+                                    <p>Dore</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-right">MM/DD/YY</span>
+                                    <span style="font-weight: bold;">Lot #7</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
-    </body>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    Batches content
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    Bullion content
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
 </html>
