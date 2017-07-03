@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>G-Dore</title>
+    <title>G-Dore - Miner Create a Lot</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,43 +10,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <style>
-        .textfield {
-            border: none;
-            border-bottom: 1px solid black;
-        }
-        
-        .modal {
-            text-align: center;
-            padding: 0!important;
-        }
-        
-        .modal:before {
-            content: '';
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-            margin-right: -4px;
-        }
-        
-        .modal-dialog {
-            display: inline-block;
-            text-align: left;
-            vertical-align: middle;
-            width: 25%;
-        }
-        
-        .submitButton {
-            padding-top: 15px;
-            text-align: center
-        }
-        
-        .confirmButton {
-            padding-Left: 30px;
-            padding-Right: 30px;
-            margin-Left: 10px
-        }
-    </style>
 </head>
 
 <body>
@@ -87,34 +50,33 @@
                     <h6>Created <span style="padding-Left:15px"> MM/DD/YY HH:MM</span></h6>
                 </div>
                 <div style="padding-Top:20px" class="pull-right">
-                    <button type="button" class="btn btn-md btn-default confirmButton confirm-content" data-toggle="popover" data-placement="bottom" data-html="true">Confirm Contents</button>
-                    <button type="button" class="btn btn-md btn-default confirmButton release" data-toggle="popover" data-placement="bottom" data-html="true">Release</button>
+                    <button type="button" class="btn btn-md btn-default confirmButton confirm-content" data-toggle="popover" data-placement="bottom"
+                        data-html="true">Confirm Contents</button>
+                    <button type="button" class="btn btn-md btn-default confirmButton release" data-toggle="popover" data-placement="bottom"
+                        data-html="true">Release</button>
                 </div>
                 <div class="hide" id="release">
-                    <div style="text-align:center;line-height:3em">
-                        <select class="textfield">
-                                        <option>Select Logistics Company</option>
-                                        <option>Refinary</option>
-                                        <option>Bank</option>
-                                    </select>
+                    <div class="text-center authentic-form-control">
+                        <select class="">
+                            <option>Select Logistics Company</option>
+                            <option>Refinary</option>
+                            <option>Bank</option>
+                        </select>
                     </div>
-                    <div class="submitButton">
-                        <button type="button" class="btn btn-lg btn-default">Submit</button>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-md btn-default">Submit</button>
                     </div>
                 </div>
 
                 <div class="hide" id="conform-content">
-                    <h5>Dore Content has been confirmed by the refinery?</h5>
-                    <div class="submitButton">
-                        <button style="background-color:black;color:white;padding-Left:30px;padding-Right:30px" type="button" class="btn btn-lg btn-default">Submit</button>
+                    <h5 class="text-center">Dore Content has been confirmed by the refinery?</h5>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-md btn-default">Submit</button>
                     </div>
                 </div>
-
-
-
             </div>
             <div style="padding-Top:20px" class="row">
-                <table class="table">
+                <table class="table authentic-form-control">
                     <thead>
                         <tr>
                             <th><input class="table-checkbox" type="checkbox" value=""></th>
@@ -194,21 +156,19 @@
         </section>
     </div>
     <script>
-        $(document).ready(function() {
-
+        $(document).ready(function () {
             $(".confirm-content").popover({
                 html: true,
-                content: function() {
+                content: function () {
                     return $('#conform-content').html();
                 }
-            })
-
+            });
             $(".release").popover({
                 html: true,
-                content: function() {
+                content: function () {
                     return $('#release').html();
                 }
-            })
+            });
         });
     </script>
 </body>

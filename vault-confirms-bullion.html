@@ -10,16 +10,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <style>
-        .bold {
-            font-weight: bold;
-        }
-        
-        .submitButton {
-            padding-top: 15px;
-            text-align: center
-        }
-    </style>
 </head>
 
 <body>
@@ -67,41 +57,41 @@
                 </div>
             </div>
             <div class="row bordered-div" style="margin-top: 15px; padding-bottom: 10px;">
-                <div class=" col-lg-3 dropdown">
-                    <span>
-                            <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Showing Unconfirmed transport (1)
-                                <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="menu1">
-                        <li><a href="#">Sort By Name</a></li>
-                        <li><a href="#">Sort By Date</a></li>
-                    </ul>
-                    </span>
-
+                <div class="col-lg-3">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
+                            Sort by data created
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Sort By Name</a></li>
+                            <li><a href="#">Sort By Date</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-3 dropdown">
-
-                    <span>
-                            <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="menu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Sort by received date
-                                <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="menu2">
-                        <li><a href="#">1/7/2017</a></li>
-                        <li><a href="#">2/7/2017</a></li>
-                        <li><a href="#">3/7/2017</a></li>
-                    </ul>
-                    </span>
+                <div class="col-lg-3">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
+                            Sort by data 
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">1/7/2017</a></li>
+                            <li><a href="#">1/7/2017</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row" style="margin-top: 15px;">
                 <div class="col-lg-6 col-xs-8">
-                    <h6>1 Bullion Record Selected</h6>
+                    <p>1 Bullion Record Selected</p>
                 </div>
                 <div class="col-lg-6 col-xs-4">
                     <div class="dropdown pull-right">
-                        <button type="button" class="btn btn-md btn-default confirmButton confirm-receipt" data-toggle="popover" data-placement="bottom" data-html="true">Confirm Receipt</button>
+                        <button type="button" class="btn btn-md btn-default confirmButton confirm-receipt" data-toggle="popover" data-placement="bottom"
+                            data-html="true">Confirm Receipt</button>
                     </div>
                 </div>
             </div>
@@ -283,11 +273,11 @@
         </section>
         </div>
         <script>
-            $(document).ready(function() {
+            $(document).ready(function () {
 
                 $(".confirm-receipt").popover({
                     html: true,
-                    content: function() {
+                    content: function () {
                         return $('#confirm-receipt').html();
                     }
                 })

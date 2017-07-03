@@ -10,37 +10,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <style>
-        .textfield {
-            border: none;
-            border-bottom: 1px solid black;
-        }
-        
-        .modal {
-            text-align: center;
-            padding: 0!important;
-        }
-        
-        .modal:before {
-            content: '';
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-            margin-right: -4px;
-        }
-        
-        .modal-dialog {
-            display: inline-block;
-            text-align: left;
-            vertical-align: middle;
-            width: 25%;
-        }
-        
-        .submitButton {
-            padding-top: 15px;
-            text-align: center
-        }
-    </style>
 </head>
 
 <body>
@@ -85,13 +54,19 @@
                 </div>
 
                 <div class="hide" id="process-batch">
-                    <h5 style="line-height:3em">The wait for this batch is <input class="textfield" type="text" value="" size="4" />kg . The batch will be refined at
+                    <div class="authentic-form-control">
+                        <h5>
+                            The wait for this batch is 
+                            <input class="textfield" type="text" value="" size="4" />kg . 
+                            The batch will be refined at
+                        </h5>
                         <select class="textfield">
-                                        <option>Location 1</option>
-                                        <option>Location 2</option>
-                                    </select></h5>
-                    <div class="submitButton">
-                        <button type="button" class="btn btn-lg btn-default">Submit</button>
+                            <option>Location 1</option>
+                            <option>Location 2</option>
+                        </select>
+                        <div class="submitButton text-center">
+                            <button type="button" class="btn btn-md btn-default">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -208,10 +183,10 @@
     </div>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".process-batch").popover({
                 html: true,
-                content: function() {
+                content: function () {
                     return $('#process-batch').html();
                 }
             })

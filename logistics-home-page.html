@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>G-Dore</title>
+    <title>G-Dore - Logistics Home Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -56,14 +56,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row bordered-div" style="margin-top: 15px; padding-bottom: 10px;">
+            <div class="row bordered-div" >
                 <div class="col-lg-6 col-xs-6">
                     <div class="dropdown">
                         <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="true">
-                                    Sort
-                                    <span class="caret"></span>
-                                    </button>
+                            Sort
+                        <span class="caret"></span>
+                        </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li><a href="#">Sort By Name</a></li>
                             <li><a href="#">Sort By Date</a></li>
@@ -73,19 +73,19 @@
                 <div class="col-lg-6 col-xs-6">
                     <div class="btn-group pull-right" role="group" aria-label="...">
                         <button type="button" class="btn btn-default">
-                                        <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
-                                        </button>
+                            <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                        </button>
                         <button type="button" class="btn btn-default">
-                                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-                                        </button>
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="row" style="margin-top: 15px;">
-                <div class="col-lg-6 col-xs-8">
+                <div class="col-lg-6 col-xs-12">
                     <p>1 Lots(6 Dore) Selected</p>
                 </div>
-                <div class="col-lg-6 col-xs-4">
+                <div class="col-lg-6 col-xs-12">
                     <div class="dropdown pull-right">
                         <button type="button" class="btn btn-md btn-default  transport" data-toggle="popover" data-placement="bottom" data-html="true">Transport</button>
                         <button type="button" class="btn btn-md btn-default  transport-title" data-toggle="popover" data-placement="bottom" data-html="true">Transport title</button>
@@ -93,31 +93,24 @@
                 </div>
             </div>
             <div class="hide" id="transport">
-                <p>
-                    <div class="dropdown">
-                        Select Refinary
-                        <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-                           <span class="glyphicon glyphicon-chevron-down"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <li><a href="#">Refinary</a></li>
-                            <li><a href="#">Bank</a></li>
-                        </ul>
-                    </div>
-                </p>
-                <div style="text-align:center;">
-                    <button type="button" class="btn btn-large btn-block btn-defualt">
-                     Submit
+                <div class="text-center authentic-form-control">
+                    <select>
+                        <option value="">Refinary</option>
+                        <option value="">Bank</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-md btn-defualt">
+                        Submit
                     </button>
                 </div>
             </div>
             <div class="hide" id="transport-title">
-                <p>Confirm transfer of Dore title </p>
-                <div style="text-align:center;">
-                    <button type="button" style="background-color:#49454D" class="btn btn-md btn-defualt">
-                                                            <h3 style="color:white"> Submit
-                                                        </button>
+                <h5 class="text-center">Confirm transfer of Dore title </h5>
+                <div class="text-center">
+                    <button type="button" class="btn btn-md btn-defualt">
+                        Submit
+                    </button>
                 </div>
             </div>
 
@@ -169,7 +162,7 @@
                     </div>
                 </div>
         </section>
-    </div>
+        </div>
         <script>
             $(document).ready(function () {
 
