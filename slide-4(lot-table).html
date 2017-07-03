@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>G-Dore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <style>
+        .textfield {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        
+        .modal {
+            text-align: center;
+            padding: 0!important;
+        }
+        
+        .modal:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -4px;
+        }
+        
+        .modal-dialog {
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+            width: 25%;
+        }
+        
+        .submitButton {
+            padding-top: 15px;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <section class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1476/1600/t/1/assets/logo.png?4079654091067866978" alt="Dispute Bills">
+                        </a>
+                    </div>
+                    <div id="navbar1" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="container">
+            <div class="row">
+                <span style="font-size:20px" class="glyphicon glyphicon-chevron-left">Back</span>
+            </div>
+            <div style="padding-Top:15px" class="row">
+                <div class="col-lg-6">
+                    <p style="font-weight:bold;font-size:18px">Dore` Records for Lot#1</p>
+                    <p>Created <span style="padding-Left:15px"> MM/DD/YY HH:MM</span></p>
+                </div>
+                <div style="padding-Top:20px" class="pull-right">
+                    <button style="padding-Left:30px;padding-Right:30px" type="button" class="btn btn-md btn-default" data-toggle="modal" data-target="#createContent">Confirm Contents</button>
+                    <button style="padding-Left:30px;padding-Right:30px;margin-Left:10px" type="button" class="btn btn-md btn-default" data-toggle="modal" data-target="#release">Release</button>
+                </div>
+                <div class="modal fade" id="createContent" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Confirm Contents</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>Dore Content has been confirmed by the refinery?</p>
+                                <div class="submitButton">
+                                    <button style="background-color:black;color:white;padding-Left:30px;padding-Right:30px" type="button" class="btn btn-lg btn-default">Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="release" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Release</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div style="text-align:center;line-height:3em">
+                                    <select class="textfield" style="width:70%">
+                                        <option>Select Logistics Company</option>
+                                        <option>Refinary</option>
+                                        <option>Bank</option>
+                                    </select>
+                                </div>
+                                <div class="submitButton">
+                                    <button style="padding-Left:60px;padding-Right:60px" type="button" class="btn btn-lg btn-default">Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div style="padding-Top:20px" class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><input class="table-checkbox" type="checkbox" value=""></th>
+                            <th>Serial #</th>
+                            <th>Title</th>
+                            <th>Liability</th>
+                            <th>Origin</th>
+                            <th>Weight(kg)</th>
+                            <th>Assay(%)</th>
+                            <th>Cert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input class="table-checkbox" type="checkbox" value=""></td>
+                            <td><input class="textfield" type="text" value="" size="14" /></td>
+                            <td>Miner Name </td>
+                            <td>Miner Name </td>
+                            <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input type="button" value="view"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="table-checkbox" type="checkbox" value=""></td>
+                            <td><input class="textfield" type="text" value="" size="14" /></td>
+                            <td>Miner Name </td>
+                            <td>Miner Name </td>
+                            <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input type="button" value="view"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="table-checkbox" type="checkbox" value=""></td>
+                            <td><input class="textfield" type="text" value="" size="14" /></td>
+                            <td>Miner Name </td>
+                            <td>Miner Name </td>
+                            <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input type="button" value="view"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="table-checkbox" type="checkbox" value=""></td>
+                            <td><input class="textfield" type="text" value="" size="14" /></td>
+                            <td>Miner Name </td>
+                            <td>Miner Name </td>
+                            <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input type="button" value="view"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="table-checkbox" type="checkbox" value=""></td>
+                            <td><input class="textfield" type="text" value="" size="14" /></td>
+                            <td>Miner Name </td>
+                            <td>Miner Name </td>
+                            <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input type="button" value="view"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="table-checkbox" type="checkbox" value=""></td>
+                            <td><input class="textfield" type="text" value="" size="14" /></td>
+                            <td>Miner Name </td>
+                            <td>Miner Name </td>
+                            <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input class="textfield" type="text" value="" size="4" /></td>
+                            <td><input type="button" value="view"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

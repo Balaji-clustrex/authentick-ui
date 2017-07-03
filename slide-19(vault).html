@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>G-Dore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <section class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1476/1600/t/1/assets/logo.png?4079654091067866978" alt="Dispute Bills">
+                        </a>
+                    </div>
+                    <div id="navbar1" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Bullion</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row bordered-div" style="margin-top: 15px; padding-bottom: 10px;">
+                <div class="col-lg-6 col-xs-6">
+                    <div class="dropdown">
+                        <span>
+                            <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Showing Unconfirmed transport (1)
+                                <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="menu1">
+                            <li><a href="#">Sort By Name</a></li>
+                            <li><a href="#">Sort By Date</a></li>
+                        </ul>
+                        </span>
+                        <span>
+                            <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="menu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Sort by received date
+                                <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="menu2">
+                            <li><a href="#">1/7/2017</a></li>
+                            <li><a href="#">2/7/2017</a></li>
+                            <li><a href="#">3/7/2017</a></li>
+                        </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-lg-6 col-xs-8">
+                    <p>1 Bullion Record Selected</p>
+                </div>
+                <div class="col-lg-6 col-xs-4">
+                    <div class="dropdown pull-right">
+                        <button style="padding-Left:30px;padding-Right:30px" type="button" class="btn btn-md btn-default" data-toggle="modal" data-target="#confirmReceipt">Confirm Receipt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="bullion">
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="card">
+                            <div class="card-block">
+                                <div>
+                                    <p class="glyphicon glyphicon-remove-circle col-lg-1"></p>
+                                    <p class="col-lg-4">Created <span style="padding-Left:20px;font-weight:bold"> MM/DD/YY HH:MM</span></p>
+                                    <p class="col-lg-4">Refiner <span style="padding-Left:30px;font-weight:bold">RefinerBCD</span></p>
+                                    <p class="col-lg-3">Serial <span style="padding-Left:50px;font-weight:bold"> 985421346</span></p>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <p style="padding-Left:110px" class="col-lg-5">Batch <span style="padding-Left:40px;font-weight:bold">987765</span></p>
+                                    <p class="col-lg-4">Location <span style="padding-Left:20px;font-weight:bold">Jonnesberg,USA</span></p>
+                                    <p class="col-lg-3">Weight(kg) <span style="padding-Left:20px;font-weight:bold"> 12.4</span></p>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <p style="padding-Left:490px" class="col-lg-9">Title <span style="padding-Left:45px;font-weight:bold">RefinerBCD</span></p>
+                                    <p class="col-lg-3">Assay(%) <span style="padding-Left:32px;font-weight:bold"> 97.2</span></p>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <p style="padding-Left:490px" class="col-lg-9">Liability <span style="padding-Left:25px;font-weight:bold">RefinerBCD</span></p>
+                                    <p style="text-align:center" class="col-lg-12"><button type="button" class="btn btn-default" data-toggle="collapse" data-target="#showmore">Show More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="showmore" class="collapse">
+                    <div style="padding-Top:20px" class="row">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><input class="table-checkbox" type="checkbox" value=""></th>
+                                    <th>Serial #</th>
+                                    <th>Title</th>
+                                    <th>Liability</th>
+                                    <th>Origin</th>
+                                    <th>Weight(kg)</th>
+                                    <th>Assay(%)</th>
+                                    <th>Cert</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input class="table-checkbox" type="checkbox" value=""></td>
+                                    <td><input class="textfield" type="text" value="" size="14" /></td>
+                                    <td>Miner Name </td>
+                                    <td>Miner Name </td>
+                                    <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input type="button" value="view"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="table-checkbox" type="checkbox" value=""></td>
+                                    <td><input class="textfield" type="text" value="" size="14" /></td>
+                                    <td>Miner Name </td>
+                                    <td>Miner Name </td>
+                                    <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input type="button" value="view"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="table-checkbox" type="checkbox" value=""></td>
+                                    <td><input class="textfield" type="text" value="" size="14" /></td>
+                                    <td>Miner Name </td>
+                                    <td>Miner Name </td>
+                                    <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input type="button" value="view"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="table-checkbox" type="checkbox" value=""></td>
+                                    <td><input class="textfield" type="text" value="" size="14" /></td>
+                                    <td>Miner Name </td>
+                                    <td>Miner Name </td>
+                                    <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input type="button" value="view"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="table-checkbox" type="checkbox" value=""></td>
+                                    <td><input class="textfield" type="text" value="" size="14" /></td>
+                                    <td>Miner Name </td>
+                                    <td>Miner Name </td>
+                                    <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input type="button" value="view"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="table-checkbox" type="checkbox" value=""></td>
+                                    <td><input class="textfield" type="text" value="" size="14" /></td>
+                                    <td>Miner Name </td>
+                                    <td>Miner Name </td>
+                                    <td>Witwatersrand Basin(Jonnersburg , ZAF)</td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input class="textfield" type="text" value="" size="4" /></td>
+                                    <td><input type="button" value="view"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
