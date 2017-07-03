@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>G-Dore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <section class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1476/1600/t/1/assets/logo.png?4079654091067866978" alt="Dispute Bills">
+                            </a>
+                    </div>
+                    <div id="navbar1" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Lots</a></li>
+                        <li role="presentation"><a href="#batches" aria-controls="batches" role="tab" data-toggle="tab">Batches</a></li>
+                        <li role="presentation"><a href="#bullion" aria-controls="bullion" role="tab" data-toggle="tab">Bullion</a></li>
+                        <li role="presentation"><a href="#vault" aria-controls="vault" role="tab" data-toggle="tab">Vault</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="row bordered-div" style="margin-top: 15px; padding-bottom: 10px;">
+                        <div class="col-lg-4 col-xs-4">
+                            <select style="border:0px;background-color:white">
+                                    <option><a href="#unconfirmed"  role="tab" data-toggle="tab">Showing unconfirmed transport(1)</a></option>
+                                    <option><a href="#confirmed"  role="tab" data-toggle="tab">Showing confirmed transport(6)</a></option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-xs-6">
+                            <div class="dropdown">
+                                <button style="border:0px" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="true">
+                                    Sort
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Sort By Name</a></li>
+                                    <li><a href="#">Sort By Date</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-6">
+                            <div class="btn-group pull-right" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                            </button>
+                                <button type="button" class="btn btn-default">
+                                  <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="unconfirmed">
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-lg-6 col-xs-8">
+                                <p>1 Lots(6 Dore) Selected</p>
+                            </div>
+                            <div class="col-lg-6 col-xs-4">
+                                <div class="dropdown pull-right">
+                                    <button type="button" class="btn btn-default">Confirm Receipt</button>
+                                    <button type="button" style="margin-left:10px" class="btn btn-default">Confirm Content</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-block" style="text-align: center;">
+                                    <button class="btn btn-inverse" type="button">
+                                        <span class="badge">4</span>
+                                </button>
+                                    <p>Dore</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-right">MM/DD/YY</span>
+                                    <span style="font-weight: bold;">Lot #1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="batches">
+                    <div class="row bordered-div" style="margin-top: 15px; padding-bottom: 10px;">
+                        <div class="col-lg-6 col-xs-4">
+                            <select style="border:0px;background-color:white">
+                                    <option><a href="#unconfirmed"  role="tab" data-toggle="tab">Short by data created</a></option>
+                                    <option><a href="#confirmed"  role="tab" data-toggle="tab">Short by name created</a></option>
+                               </select>
+                        </div>
+                        <div class="col-lg-6 col-xs-6">
+                            <div class="btn-group pull-right" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">
+                                   <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                                </button>
+                                <button type="button" class="btn btn-default">
+                                      <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                             </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="unconfirmed">
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-lg-6 col-xs-8">
+                                <p>2 Batches Selected</p>
+                            </div>
+                            <div class="col-lg-6 col-xs-4">
+                                <div class="dropdown pull-right">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createbullion">Create Bulliion</button>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="createbullion" role="dialog">
+                                <div class="modal-dialog modal-md" style="width:300px;">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Transport title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p><input type="text" style=" background-color: transparent;color:black;outline: none;outline-style:none;border-top: none;border-left: none;border-right: none;border-bottom: solid black 1px;"
+                                                /> bullion will be
+                                                <p>created from these Batches
+                                                </p>
+                                                <div style="text-align:center;">
+                                                    <button type="button" class="btn btn-large btn-block btn-defualt">
+                                                  <h4> Submit</h4>
+                                               </button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="card-block" style="text-align: center;">
+                                        <p>RefinerABC</p>
+                                        <p>123456789</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <span class="pull-right">MM/DD/YY</span>
+                                        <span style="font-weight: bold;">HH/MM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="card-block" style="text-align: center;">
+                                        <p>RefinerABC</p>
+                                        <p>234567890</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <span class="pull-right">MM/DD/YY</span>
+                                        <span style="font-weight: bold;">HH/MM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <div class="card-block" style="text-align: center;">
+                                        <p>RefinerABC</p>
+                                        <p>345678910</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <span class="pull-right">MM/DD/YY</span>
+                                        <span style="font-weight: bold;">HH/MM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="bullion">
+                    <div class="row bordered-div1" style="margin-top: 15px; padding-bottom: 10px;">
+                        <div class="col-lg-12 col-xs-12">
+                            <select style="border:0px;background-color:white">
+                                    <option><a href="#unconfirmed"  role="tab" data-toggle="tab">Sort by data created</a></option>
+                                    <option><a href="#confirmed"  role="tab" data-toggle="tab">Sort by name created</a></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-lg-6 col-xs-8">
+                            <p>1 Bullion record Selected</p>
+                        </div>
+                        <div class="col-lg-6 col-xs-4">
+                            <div class="dropdown pull-right">
+                                <button type="button" class="btn btn-default">Transfer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bordered-div" style=" padding-bottom: 10px;">
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="vault">
+                    vault
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
