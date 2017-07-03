@@ -73,40 +73,29 @@
         </section>
         <section class="container">
             <div class="row">
-                <span style="font-size:20px" class="glyphicon glyphicon-menu-left">Back</span>
+                <h4 class="glyphicon glyphicon-menu-left">Back</h4>
             </div>
             <div style="padding-Top:15px" class="row">
                 <div class="col-lg-6">
-                    <p style="font-weight:bold;font-size:18px">Batch Refiner ABC 123456789</p>
-                    <p>Created <span style="padding-Left:15px"> MM/DD/YY HH:MM</span></p>
+                    <h4>Batch Refiner ABC 123456789</h4>
+                    <h6>Created <span style="padding-Left:15px"> MM/DD/YY HH:MM</span></h6>
                 </div>
-                <div style="padding-Top:20px" class="pull-right">
-                    <button style="padding-Left:30px;padding-Right:30px" type="button" class="btn btn-md btn-default" data-toggle="modal" data-target="#processBatch">Process Batch</button>
+                <div style="padding-top:20px" class="pull-right">
+                    <button type="button" class="btn btn-md btn-default process-batch" data-toggle="popover" data-placement="bottom" data-html="true">Process Batch</button>
                 </div>
-                <div class="modal fade" id="processBatch" role="dialog">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Process Batch</h4>
-                            </div>
-                            <div style="line-height:3em" class="modal-body">
 
-                                <p>The wait for this batch is <input class="textfield" type="text" value="" size="4" />kg . The batch will be refined at
-                                    <select class="textfield" style="width:40%">
+                <div class="hide" id="process-batch">
+                    <h5 style="line-height:3em">The wait for this batch is <input class="textfield" type="text" value="" size="4" />kg . The batch will be refined at
+                        <select class="textfield">
                                         <option>Location 1</option>
                                         <option>Location 2</option>
-                                    </select></p>
-                                <div class="submitButton">
-                                    <button style="padding-Left:60px;padding-Right:60px" type="button" class="btn btn-lg btn-default">Submit</button>
-                                </div>
-                            </div>
-
-                        </div>
+                                    </select></h5>
+                    <div class="submitButton">
+                        <button type="button" class="btn btn-lg btn-default">Submit</button>
                     </div>
                 </div>
             </div>
-            <div style="padding-Top:20px" class="row">
+            <div style="padding-Top:20px" class="row table-responsive">
                 <table class="table">
                     <thead>
                         <tr>
@@ -217,6 +206,17 @@
             </div>
         </section>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".process-batch").popover({
+                html: true,
+                content: function() {
+                    return $('#process-batch').html();
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
