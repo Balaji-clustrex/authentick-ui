@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>G-Dore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+        
+        .submitButton {
+            padding-top: 15px;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <section class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1476/1600/t/1/assets/logo.png?4079654091067866978" alt="Dispute Bills">
+                        </a>
+                    </div>
+                    <div id="navbar1" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Bullion</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row bordered-div" style="margin-top: 15px; padding-bottom: 10px;">
+                <div class=" col-lg-3 dropdown">
+                    <span>
+                            <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Showing Unconfirmed transport (1)
+                                <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="menu1">
+                        <li><a href="#">Sort By Name</a></li>
+                        <li><a href="#">Sort By Date</a></li>
+                    </ul>
+                    </span>
+
+                </div>
+                <div class="col-lg-3 dropdown">
+
+                    <span>
+                            <button style="border:0px solid transparent;" class="btn btn-default dropdown-toggle" type="button" id="menu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Sort by received date
+                                <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="menu2">
+                        <li><a href="#">1/7/2017</a></li>
+                        <li><a href="#">2/7/2017</a></li>
+                        <li><a href="#">3/7/2017</a></li>
+                    </ul>
+                    </span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-lg-6 col-xs-8">
+                    <h6>1 Bullion Record Selected</h6>
+                </div>
+                <div class="col-lg-6 col-xs-4">
+                    <div class="dropdown pull-right">
+                        <button type="button" class="btn btn-md btn-default confirmButton confirm-receipt" data-toggle="popover" data-placement="bottom" data-html="true">Confirm Receipt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hide" id="confirm-receipt">
+                <div style="text-align:center;line-height:3em">
+                    <select class="textfield">
+                                        <option>Select Logistics Company</option>
+                                        <option>Refinary</option>
+                                        <option>Bank</option>
+                                    </select>
+                </div>
+                <div class="submitButton">
+                    <button type="button" class="btn btn-lg btn-default">Submit</button>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="bullion">
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="card">
+                            <div class="card-block">
+                                <div>
+                                    <h6 class="col-lg-1">Created
+                                        <h5 class="col-lg-3 bold"> MM/DD/YY HH:MM</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Refiner
+                                        <h5 class="col-lg-3 bold">RefinerBCD</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-3 bold"> 985421346</h5>
+                                    </h6>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <h6 class="col-lg-1">Batch
+                                        <h5 class="col-lg-3 bold">987765</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Location
+                                        <h5 class="col-lg-3 bold">Jonnesberg,USA</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Weight(kg)
+                                        <h5 class="col-lg-3 bold"> 12.4</h5>
+                                    </h6>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <h6 class="col-lg-1">
+                                        <h5 class="col-lg-3 "></h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Title
+                                        <h5 class="col-lg-3 bold">RefinerBCD</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Assay(%)
+                                        <h5 class="col-lg-3 bold"> 97.2</h5>
+                                    </h6>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <h6 class="col-lg-1">
+                                        <h5 class="col-lg-3"></h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Liability
+                                        <h5 class="col-lg-3 bold">RefinerBCD</h5>
+                                    </h6>
+                                </div>
+                            </div>
+                            <p style="padding-top:20px;text-align:center" class="col-lg-12 "><button type="button" class="btn btn-default " data-toggle="collapse" data-target="#showmore">Show More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="showmore" class="collapse">
+                    <div style="padding-Top:20px" class="row">
+                        <div class="card">
+                            <div class="card-block">
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 2343546</h5>
+                                        <h5 class="col-lg-2 bold"> 9876462</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Origin
+                                        <h5 class="col-lg-3 bold">Origin 1(Jonnesberg,ZAF)</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Certificate(s)
+                                        <h5 class="col-lg-3 bold"> Certificate of conformity 1</h5>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 3436123</h5>
+                                        <h5 class="col-lg-2 bold"> 5476832</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Origin
+                                        <h5 class="col-lg-3 bold">Origin 2(Jonnesberg,ZAF)</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Certificate(s)
+                                        <h5 class="col-lg-3 bold"> Certificate of conformity 2</h5>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 1243543</h5>
+                                        <h5 class="col-lg-2 bold"> 7656341</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Origin
+                                        <h5 class="col-lg-3 bold">Origin 3(Jonnesberg,ZAF)</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Certificate(s)
+                                        <h5 class="col-lg-3 bold"> Certificate of conformity 3</h5>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 2343256</h5>
+                                        <h5 class="col-lg-2 bold"> 8965764</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Origin
+                                        <h5 class="col-lg-3 bold">Origin 4(Jonnesberg,ZAF)</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Certificate(s)
+                                        <h5 class="col-lg-3 bold"> Certificate of conformity 4</h5>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 7643644</h5>
+                                        <h5 class="col-lg-2 bold"> 3432434</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Origin
+                                        <h5 class="col-lg-3 bold">Origin 5(Jay,IND)</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Certificate(s)
+                                        <h5 class="col-lg-3 bold"> Certificate of conformity 5</h5>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 8986543</h5>
+                                        <h5 class="col-lg-2 bold"> 2342455</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Origin
+                                        <h5 class="col-lg-3 bold">Origin 6(Nevada,USA)</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Certificate(s)
+                                        <h5 class="col-lg-3 bold"> Certificate of conformity 6</h5>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 1232432</h5>
+                                        <h5 class="col-lg-2 bold"> 3435465</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Origin
+                                        <h5 class="col-lg-3 bold">Origin 7(Kargoolie,AUS)</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Certificate(s)
+                                        <h5 class="col-lg-3 bold"> Certificate of conformity 7</h5>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 8734121</h5>
+                                        <h5 class="col-lg-2 bold"> </h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">
+                                        <h5 class="col-lg-3 bold"></h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Certificate(s)
+                                        <h5 class="col-lg-3 bold"> Certificate of conformity 8</h5>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-1 bold"> 8754432</h5>
+                                        <h5 class="col-lg-2 bold"> </h5>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </div>
+        <script>
+            $(document).ready(function() {
+
+                $(".confirm-receipt").popover({
+                    html: true,
+                    content: function() {
+                        return $('#confirm-receipt').html();
+                    }
+                })
+
+
+            });
+        </script>
+</body>
+
+</html>
