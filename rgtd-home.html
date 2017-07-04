@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>G-Dore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<style>
+    .model-form {
+        margin-top: 50px;
+        line-height: 250%;
+    }
+    .coin {
+    margin-left: 30px;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <section class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1476/1600/t/1/assets/logo.png?4079654091067866978" alt="Dispute Bills">
+                            </a>
+                    </div>
+                    <div id="navbar1" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"> <span class="glyphicon glyphicon-user"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"><a href="#available" aria-controls="home" role="tab" data-toggle="tab">Available Bullion</a></li>
+                        <li role="presentation" class="active"><a href="#owned" aria-controls="batches" role="tab" data-toggle="tab">Owned Bullion</a></li>
+                        <li role="presentation"><a href="#gcoin" aria-controls="bullion" role="tab" data-toggle="tab">G-coin Allocation</a></li>
+                        <li role="presentation"><a href="#unavailable" aria-controls="vault" role="tab" data-toggle="tab">Unavailable</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="owned">
+                    <div class="row bordered-div">
+                        <div class="col-lg-3 col-xs-12">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="true">
+                                    Showing Showing all results(9)
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Showing Showing all results(9)</a></li>
+                                    <li><a href="#">Showing Showing all results(5)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xs-6">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="true">
+                                    Sort by status
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Sort By Name</a></li>
+                                    <li><a href="#">Sort By Date</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-lg-12">
+                            <div class="dropdown pull-right">
+                                <button type="button" class="btn btn-md btn-default  transport-to-third-party" data-toggle="popover" data-placement="bottom"
+                                    data-html="true">Transport to Third Party</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide" id="transport-to-third-party">
+                        <div class="authentic-form-control">
+                            please select document with contract details to upload
+                            <input type="file" title="" name="pic" accept="image/*">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-md btn-defualt">
+                               Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="gcoin">
+                    <div class="row authentic-form-control">
+                        <div class="coin">
+                            Adjust G-Coin Allocation By:
+                        </div>
+                    </div>
+                    <div class="row authentic-form-control">
+                        <div class="col-lg-5">
+                          <div class="tabbable">  
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#bullionbars" aria-controls="no-of-bullion-bars" role="tab" data-toggle="tab">Number Of Bullion Bars</a></li>
+                                        <li role="presentation"><a href="#percentage" aria-controls="percentage" role="tab" data-toggle="tab">Percentege of Owned Bullion </a></li>
+                                    </ul>
+                                <div class="tab-content">    
+                                    <div role="tabpanel" class="tab-pane active" id="bullionbars">
+                                        <div class="row  model-form">
+                                            <div class="col-lg-12">
+                                                <p class="authentic-form-control "> I want
+                                                    <select>
+                                                <option>select an option</option>
+                                                <option></option>
+                                                </select> the number of bars allocated in G-coin by
+                                                    <input type="text" /> no of bullion bars.The new total bullion bars allocated to G-Coin
+                                                    will be <input type="text" />.45
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row model-form">
+                                            <div class="col-lg-12">
+                                                <button type="button" class="btn btn-md">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="percentage">
+                                        <div class="row  model-form">
+                                            <div class="col-lg-12">
+                                                <p class="authentic-form-control ">
+                                                    <input type="range" name="rangeInput" min="0" max="100" value="55">
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row model-form">
+                                            <div class="col-lg-12">
+                                                <p class="authentic-form-control "> The new total bullion bars allocated to G-Coin will be <input type="text" /> 50.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row model-form">
+                                            <div class="col-lg-12">
+                                                <button type="button" class="btn btn-md">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>    
+                       </div>
+                    </div>                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="unavilable">
+                    <p class=" authentic-form-control"> unavilable</p>
+                </div>
+                 <div role="tabpanel" class="tab-pane" id="avilable">
+                    <p class=" authentic-form-control">avilable</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $(".transport-to-third-party").popover({
+                html: true,
+                content: function () {
+                    return $('#transport-to-third-party').html();
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
