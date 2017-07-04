@@ -25,7 +25,7 @@
                             <span class="icon-bar"></span>
                             </button>
                         <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1476/1600/t/1/assets/logo.png?4079654091067866978" alt="Dispute Bills">
-                            </a>
+                        </a>
                     </div>
                     <div id="navbar1" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -64,8 +64,7 @@
                     <div class="row bordered-div">
                         <div class="col-lg-3 col-xs-12">
                             <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="true">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     Showing unconfirmed transport(1)
                                   <span class="caret"></span>
                                 </button>
@@ -77,8 +76,7 @@
                         </div>
                         <div class="col-lg-3 col-xs-6">
                             <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="true">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     Sort
                                   <span class="caret"></span>
                                 </button>
@@ -108,10 +106,11 @@
                                 <div class="dropdown pull-right">
                                     <button type="button" class="btn btn-default">Confirm Receipt</button>
                                     <button type="button" style="margin-left:10px" class="btn btn-default">Confirm Content</button>
+                                    <button type="button" style="margin-left:10px" class="btn btn-default">Create Batch</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" style="margin-top: 15px;">
                             <div class="col-lg-3">
                                 <div class="card">
                                     <div class="card-block text-center">
@@ -133,8 +132,7 @@
                     <div class="row bordered-div">
                         <div class="col-lg-6 col-xs-6">
                             <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="true">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     Short by data createds
                                   <span class="caret"></span>
                                 </button>
@@ -156,7 +154,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="row">
+                        <div class="row" style="padding-top:15px">
                             <div class="col-lg-6">
                                 <p>2 Batches Selected</p>
                             </div>
@@ -167,8 +165,7 @@
                             </div>
                             <div class="hide" id="create-bullion">
                                 <div class="modal-body">
-                                    <input type="text"/>
-                                      bullion will be created from these Batches
+                                    <input type="text" /> bullion will be created from these Batches
                                     <div class="text-center">
                                         <button type="button" class="btn btn-md btn-defualt">
                                              <h4> Submit</h4>
@@ -223,8 +220,7 @@
                     <div class="row bordered-div1" style="margin-top: 15px; padding-bottom: 10px;">
                         <div class="col-lg-12 col-xs-12">
                             <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="true">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     Sort by data created
                                   <span class="caret"></span>
                                 </button>
@@ -241,31 +237,208 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="dropdown pull-right">
-                                <button type="button" class="btn btn-default">Transfer</button>
+                                <button type="button" class="btn btn-default transfer" data-toggle="popover" data-placement="bottom" data-html="true">Transfer</button>
+                            </div>
+                        </div>
+                        <div class="hide" id="transfer">
+                            <div class="authentic-form-control">
+                                <select class="textfield">
+                                    <option>Select Vault</option>
+                                    <option>Location 2</option>
+                                </select>
+                                <div class="submitButton text-center">
+                                    <button type="button" class="btn btn-md btn-default">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row bordered-div" style=" padding-bottom: 10px;">
+
+                    <div class="row authentic-form-control" style="margin-top: 15px;">
+                        <div class="card">
+                            <div class="card-block">
+                                <div>
+                                    <h6 class="col-lg-1">Created
+                                        <h5 class="col-lg-3 bold"> MM/DD/YY HH:MM</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Refiner
+                                        <h5 class="col-lg-3 bold">RefinerBCD</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Serial
+                                        <h5 class="col-lg-3 bold"> <input class="textfield" type="text" value="" size="15" /></h5>
+                                    </h6>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <h6 class="col-lg-1">Batch
+                                        <h5 class="col-lg-3 bold">987765</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Location
+                                        <h5 class="col-lg-3 bold">Jonnesberg,USA</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Weight(kg)
+                                        <h5 class="col-lg-3 bold"><input class="textfield" type="text" value="" size="4" /></h5>
+                                    </h6>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <h6 class="col-lg-1">
+                                        <h5 class="col-lg-3 "></h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Title
+                                        <h5 class="col-lg-3 bold">RefinerBCD</h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Assay(%)
+                                        <h5 class="col-lg-3 bold"><input class="textfield" type="text" value="" size="4" /></h5>
+                                    </h6>
+                                </div>
+                                <div style="padding-Top:10px">
+                                    <h6 class="col-lg-1">
+                                        <h5 class="col-lg-3"></h5>
+                                    </h6>
+                                    <h6 class="col-lg-1">Liability
+                                        <h5 class="col-lg-3 bold">RefinerBCD</h5>
+                                    </h6>
+                                </div>
+                            </div>
+                            <p style="padding-top:20px;text-align:center" class="col-lg-12 "><button type="button" class="btn btn-default " data-toggle="collapse" data-target="#showmore">Show More</button>
+                        </div>
+                    </div>
+
+                    <div id="showmore" class="collapse">
+                        <div style="padding-Top:20px" class="row">
+                            <div class="card">
+                                <div class="card-block">
+                                    <div>
+                                        <h6 class="col-lg-1">Serial
+                                            <h5 class="col-lg-1 bold"> 2343546</h5>
+                                            <h5 class="col-lg-2 bold"> 9876462</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">Origin
+                                            <h5 class="col-lg-3 bold">Origin 1(Jonnesberg,ZAF)</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">Certificate(s)
+                                            <h5 class="col-lg-3 bold"> Certificate of conformity 1</h5>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-1 bold"> 3436123</h5>
+                                            <h5 class="col-lg-2 bold"> 5476832</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold">Origin 2(Jonnesberg,ZAF)</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold"> Certificate of conformity 2</h5>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-1 bold"> 1243543</h5>
+                                            <h5 class="col-lg-2 bold"> 7656341</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold">Origin 3(Jonnesberg,ZAF)</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold"> Certificate of conformity 3</h5>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-1 bold"> 2343256</h5>
+                                            <h5 class="col-lg-2 bold"> 8965764</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold">Origin 4(Jonnesberg,ZAF)</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold"> Certificate of conformity 4</h5>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-1 bold"> 7643644</h5>
+                                            <h5 class="col-lg-2 bold"> 3432434</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold">Origin 5(Jay,IND)</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold"> Certificate of conformity 5</h5>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-1 bold"> 8986543</h5>
+                                            <h5 class="col-lg-2 bold"> 2342455</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold">Origin 6(Nevada,USA)</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold"> Certificate of conformity 6</h5>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-1 bold"> 1232432</h5>
+                                            <h5 class="col-lg-2 bold"> 3435465</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold">Origin 7(Kargoolie,AUS)</h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold"> Certificate of conformity 7</h5>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-1 bold"> 8734121</h5>
+                                            <h5 class="col-lg-2 bold"> </h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold"></h5>
+                                        </h6>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-3 bold"> Certificate of conformity 8</h5>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <h6 class="col-lg-1">
+                                            <h5 class="col-lg-1 bold"> 8754432</h5>
+                                            <h5 class="col-lg-2 bold"> </h5>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="vault">
-                    vault
+
                 </div>
 
             </div>
         </section>
     </div>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
 
             $(".create-bullion").popover({
                 html: true,
-                content: function () {
+                content: function() {
                     return $('#create-bullion').html();
+                }
+            })
+
+            $(".transfer").popover({
+                html: true,
+                content: function() {
+                    return $('#transfer').html();
                 }
             })
         })
     </script>
+
 </body>
 
 </html>
