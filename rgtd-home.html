@@ -19,6 +19,7 @@
 
     .coin {
         margin-left: 30px;
+        font-weight: bold;
     }
 </style>
 
@@ -57,17 +58,9 @@
                         <li role="presentation"><a href="#available" aria-controls="home" role="tab" data-toggle="tab">Available Bullion</a></li>
                         <li role="presentation" class="active"><a href="#owned" aria-controls="batches" role="tab" data-toggle="tab">Owned Bullion</a></li>
                         <li role="presentation"><a href="#gcoin" aria-controls="bullion" role="tab" data-toggle="tab">G-coin Allocation</a></li>
-                        <li role="presentation"><a href="#unavailable" aria-controls="vault" role="tab" data-toggle="tab">Unavailable</a></li>
+                        <li role="presentation"><a href="#unavailable" aria-controls="vault" role="tab" data-toggle="tab">Unavailable Bullion</a></li>
                     </ul>
-                </div>
-                <div class="col-lg-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control " placeholder="Search">
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </span>
-                    </div>
-                </div>
+                </div>    
             </div>
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="owned">
@@ -301,12 +294,11 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="unavilable">
-                    <p class=" authentic-form-control"> unavilable</p>
+                <div role="tabpanel" class="tab-pane" id="unavailable">
+                                   
                 </div>
-                <div role="tabpanel" class="tab-pane" id="avilable">
-                    <p class=" authentic-form-control">avilable</p>
-                </div>
+                <div role="tabpanel" class="tab-pane" id="available">                    
+                </div>                
             </div>
         </section>
     </div>
