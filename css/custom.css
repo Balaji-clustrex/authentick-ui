@@ -1,51 +1,83 @@
 body {
-  font-family: "Lato";
+    font-family: "Lato";
 }
 
+
 /*For Custom Nav Bar Style Start*/
+
 .navbar-brand {
-  padding: 0px;
+    padding: 0px;
 }
+
 .navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
+    height: 100%;
+    padding: 15px;
+    width: auto;
 }
-.nav-tabs { border-bottom: none; }
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { 
-  border-width: 0; 
+
+.nav-tabs {
+    border-bottom: none;
 }
-.nav-tabs > li > a { 
-  border: none; 
-  color: #ccc;
-  font-size: 16px; 
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    border-width: 0;
 }
-.nav-tabs > li.active > a, .nav-tabs > li > a:hover { 
-  border: none; 
-  color: #000 !important; 
-  background: transparent; 
+
+.search {
+    border-radius: 6px!important;
 }
-.nav-tabs > li > a::after { 
-  content: ""; 
-  background: #000; 
-  height: 2px; 
-  position: absolute; 
-  width: 100%; 
-  left: 0px; 
-  bottom: -1px; 
-  transition: all 250ms ease 0s; 
-  transform: scale(0); 
+
+.nav-tabs>li>a {
+    border: none;
+    color: #ccc;
+    font-size: 16px;
 }
-.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { 
-  transform: scale(1); 
+
+.nav-tabs>li.active>a,
+.nav-tabs>li>a:hover {
+    border: none;
+    color: #000 !important;
+    background: transparent;
 }
-.tab-nav > li > a::after { 
-  background: #21527d none repeat scroll 0% 0%; 
-  color: #fff; 
+
+.navbar-brand:hover {
+    background-color: snow!important;
 }
-.tab-pane { padding: 15px 0; }
+
+.nav-tabs>li>a::after {
+    content: "";
+    background: #000;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+
+.nav-tabs>li.active>a::after,
+.nav-tabs>li:hover>a::after {
+    transform: scale(1);
+}
+
+.tab-nav>li>a::after {
+    background: #21527d none repeat scroll 0% 0%;
+    color: #fff;
+}
+
+.tab-pane {
+    padding: 15px 0;
+}
+
+
 /*For Custom Nav Bar Style End*/
+
+
 /*For Card Custom Style Start*/
+
 .card {
     font-size: 1em;
     overflow: hidden;
@@ -54,6 +86,7 @@ body {
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
     margin-bottom: 20px;
 }
+
 .card-block {
     font-size: 1em;
     position: relative;
@@ -63,21 +96,25 @@ body {
     border-top: 1px solid rgba(34, 36, 38, .1);
     box-shadow: none;
 }
+
 .card-img-top {
     display: block;
     width: 100%;
     height: auto;
 }
+
 .card-title {
     font-size: 1.28571429em;
     font-weight: 700;
     line-height: 1.2857em;
 }
+
 .card-text {
     clear: both;
     margin-top: .5em;
     color: rgba(0, 0, 0, .68);
 }
+
 .card-footer {
     font-size: 1em;
     position: static;
@@ -93,59 +130,86 @@ body {
 .card-inverse .btn {
     border: 1px solid rgba(0, 0, 0, .05);
 }
+
+
 /*For Card Custom Style End*/
 
-.bordered-div:after{
-  content: "";
-  display: block;
-  border-bottom: 1px solid #ccc;
-  margin: 0 15px;
-  padding-top: 15px;
+.bordered-div:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 0 15px;
+    padding-top: 15px;
 }
 
+
 /*For Model Custom Style*/
-.modal-content{
-  border-radius: 0px;
+
+.modal-content {
+    border-radius: 0px!important;
 }
-#createLotModal input, #createLotModal select{
-  border: none;
-  border-bottom: 1px solid #ddd;
+
+#createLotModal input,
+#createLotModal select {
+    border: none;
+    border-bottom: 1px solid #ddd;
 }
-#createLotModal p{
-  line-height: 3em;
+
+#createLotModal p {
+    line-height: 3em;
 }
+
 .modal {
-  text-align: center;
-  padding: 0!important;
+    text-align: center;
+    padding: 0!important;
 }
+
 .modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
 }
+
 .modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
-.authentic-form-control input:focus, .authentic-form-control select:focus{ 
+
+.authentic-form-control input:focus,
+.authentic-form-control select:focus {
     outline: none;
 }
-.authentic-form-control input, .authentic-form-control select{
-  border: none;
-  border-bottom: 1px solid #ccc;
+
+.authentic-form-control input,
+.authentic-form-control select {
+    border: none;
+    border-bottom: 1px solid #ccc;
 }
-.popover-content input, .popover-content select{
-  margin: 10px;
-} 
+
+.popover-content input,
+.popover-content select {
+    margin: 10px;
+}
+
 .navbar-brand>img {
-  padding: 7px 15px;
+    padding: 7px 15px;
 }
-.navbar-brand{
-  background: white;
+
+.navbar-brand {
+    background: white;
 }
-.btn, .btn-group, .input-group, .form-control, .input-group-addon, .popover{
-  border-radius: 0px;
+
+.btn,
+.btn-group,
+.input-group,
+.form-control,
+.input-group-addon,
+.popover,
+.navbar,
+.dropdown,
+.dropdown-menu {
+    border-radius: 0px!important;
 }
