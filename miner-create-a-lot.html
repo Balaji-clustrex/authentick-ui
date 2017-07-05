@@ -159,12 +159,14 @@
         $(document).ready(function () {
             $(".confirm-content").popover({
                 html: true,
+                trigger: 'focus',
                 content: function () {
                     return $('#conform-content').html();
                 }
             });
             $(".release").popover({
                 html: true,
+                trigger: 'focus',
                 content: function () {
                     return $('#release').html();
                 }
